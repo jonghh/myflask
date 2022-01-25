@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>output</title>
+    </head>
+    <body>
+        <p> <strong> 분석 기사: </strong> </p>
+        <p> {{ target_text }} </p>
+        <p> <strong>추출된 명사(2음절 이상)와 빈도: </strong></p>
+        <p> {{ common_words }} </p>
+        <p> <strong style="color:red"> "정책" 관련 기사 가능성(0~1 사이): {{ result_1 }} </strong></p>
+        <p> <strong style="color:red"> "위 기사는 정책 관련 기사라고 할 수 {{ result_2 }}" </strong></p>
+        <h5> * 딥러닝 모델의 정확도는 93%로 구현됐습니다. 따라서 판독 결과에 약간의 오류가 있을 수 있습니다. </h5>
+    </body>
+</html>

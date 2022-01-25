@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>input</title>
+    </head>
+    <body>
+     <strong> <h1> 2022 대선 보도에서 "정책" 관련 기사 판독기 </h1> </strong>
+     <p> </p>
+     <form action="http://192.168.10.103:5000/policynews_output" method="post">
+         <p> 선거 보도가 각종 의혹, 판세(여론조사), 캠프 전략, 선거 운동, 후보 개인사, 이미지 등에 초점을 맞춘 경우가 많습니다.</p>
+         <p> 유권자의 올바른 선택을 위해 정책과 공약에 관한 보도가 매우 필요한 상황입니다.</p>
+         <p> 이에 따라 선거 보도가 "정책" 관련 기사인지 여부를 가려주는 딥러닝 모델을 개발했습니다.</p>
+         <p> 아래 빈칸에 기사 url(네이버나 다음 기사에서 잘 작동) 또는 기사 본문을 입력하면 판독을 시작합니다.</p>
+         <p> 네이버 또는 다음 기사 url: </p>
+         <p> <textarea cols="100" rows="1" name="txt1"></textarea></p>
+         <p> 기사 본문: </p>
+         <p> <textarea cols="100" rows="10" name="txt2"></textarea></p>
+         <p> <input type="submit" value="실행"> </p>
+         <h5> 이 분석기는 python의 Konlpy okt 형태소 분석기, bidirectional LSTM 딥러닝 모델을 사용합니다. </h5>
+         <h5> (문제 발생시에는 이종혁 jonghhhh@khu.ac.kr 으로 알려주세요) </h5>
+     </form>
+    </body>
+</html>
