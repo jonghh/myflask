@@ -5,8 +5,9 @@
 
 
 from flask import Flask
-from .view import hello
+from .view import hello, policynews
 
 app = Flask(__name__)
 
-app.register_blueprint(hello.bp_hello)
+app.register_blueprint(hello.bp)
+app.register_blueprint(policynews.bp)
