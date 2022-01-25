@@ -2,10 +2,10 @@ from flask import Blueprint, render_template
 
 bp_hello = Blueprint("hello", __name__, url_prefix="/", static_folder="static")
 
-@bp_hello.route("/hello")
+@bp_hello.route("/")
 def ask1():
     return render_template("hello.html")
 
-@bp_hello.route("/hello1")
+@bp_hello.route("/analysis")
 def ask2():
-    return "안녕합니다"
+    return render_template("analysis.html")
